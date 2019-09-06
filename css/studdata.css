@@ -1,0 +1,70 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+	font-family: "sans-serif";
+  }
+  .tableDisplay{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .addBtn{
+    height: 30px; 
+    width: auto;
+    display: flex;
+    justify-content: center;  
+  }
+  .sortBtn{ 
+    height: 20px;
+    width: 20px;
+  }
+  .container{
+    position: relative;
+  }
+  .btn-group{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo{
+    height: 40px;
+    width:auto;
+  }
+  .modalHeader {
+    padding: 2px 16px;
+    background-color: #343a40;
+    color: white;
+  }
+
+  .modalBody {padding: 150px 16px;}
+  
+  .modalFooter {
+    padding: 2px 16px;
+    background-color: #343a40;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modalContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  #modalBtn{
+    height: 30px;
+  }
